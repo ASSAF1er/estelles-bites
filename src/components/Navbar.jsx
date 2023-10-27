@@ -4,7 +4,7 @@ import logo from "../assets/logo.jpg";
 
 function Navbar() {
   const nav =
-    "text-[16px] px-2 hover:text-[#fbbf24] hover:cursor-pointer border-y-[transparent] border-y-[4px]  py-2";
+    "text-[16px] px-2 hover:text-[#fbbf24] hover:cursor-pointer  my-[4px]  py-2";
   const [navMenu, setNav] = useState(false);
   const toogleNavMenu = () => {
     setNav(!navMenu);
@@ -18,11 +18,11 @@ function Navbar() {
     }
   };
   window.addEventListener("scroll", handleNavbarColor);
-  return (
+  return (<>
     <div
       className={classNames(
         scroll ? " border-b-slate-600 border-b shadow-2xl" : " ",
-        " fixed bg-[#000000] text-[#ffffff] left-0 w-screen flex  items-center duration-500 justify-between px-5   ",
+        " z-20  fixed bg-[#000000] text-[#ffffff] left-0 w-screen flex  items-center duration-500 justify-between px-5   ",
       )}
     >
       <div className=" text-[25px] w-[200px] font-bold  pr-10 py-2 ">
@@ -33,10 +33,10 @@ function Navbar() {
         <div className={nav}>Galerie</div>
         <div className={nav}>Contact</div>
         <div className={nav}>À propos</div>
-        <div className={nav}>COMMANDER</div>
+        <div className={classNames(scroll?'bg-[#fde047] text-black rounded-md hover:bg-white hover:text-black px-5 ':'',nav) }>Commander</div>
       </div>
       <div
-        className="md:hidden z-20 flex items-center  hover:cursor-pointer"
+        className="md:hidden  flex items-center  hover:cursor-pointer"
         onClick={toogleNavMenu}
       >
         {!navMenu ? (
@@ -44,30 +44,30 @@ function Navbar() {
         ) : (
           <span className="material-icons ">close</span>
         )}
-      </div>
+      </div></div><div>
       <ul
         className={classNames(
           !navMenu ? "left-[-100%]" : "left-0",
-          "md:hidden px-5 fixed z-10 ease-in-out duration-500 top-0  bg-[#166534] w-[100%] h-screen pt-[50px] uppercase ",
+          "md:hidden text-black px-5 text-center fixed z-10 ease-in-out duration-500 top-0  bg-[#f8e066] w-[100%] h-screen pt-[100px] uppercase ",
         )}
       >
-        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#165034]">
+        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
           accueil
         </li>
-        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#165034]">
+        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
           producteurs
         </li>
-        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#165034]">
+        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
           projets
         </li>
-        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#165034]">
+        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
           chat
         </li>
-        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#165034]">
+        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
           notications
         </li>
       </ul>
-    </div>
+    </div></>
   );
 }
 

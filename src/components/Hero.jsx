@@ -12,7 +12,7 @@ function Hero() {
             Des petites patisseries qui procurent de grandes sensations
           </p>
           <div className=" text-xl sm:text-2xl my-[20px]">
-            Pour des moments en famille, votre pause au bureau, vos céremonies,
+            Pour des moments en famille, votre pause au bureau, vos cérémonies,
             etc.
           </div>
         </div>
@@ -21,7 +21,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center md:w-[50%]">
-        <div className="bg-[#fbbf24] cursor-pointer text-black text-2xl py-2 px-4 shadow-md rounded-md">
+        <div className="bg-[#fbbf24] hover:bg-[#fde047] cursor-pointer text-black text-2xl py-2 px-4 shadow-md rounded-md">
           Commander maintenant
         </div>
       </div></div>
