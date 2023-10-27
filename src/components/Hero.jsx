@@ -21,8 +21,8 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center md:w-[50%]">
-        <div className="bg-[#fbbf24] text-black text-2xl py-2 px-4 shadow-md rounded-md">
-          Comander maintenant
+        <div className="bg-[#fbbf24] cursor-pointer text-black text-2xl py-2 px-4 shadow-md rounded-md">
+          Commander maintenant
         </div>
       </div></div>
     </div>
