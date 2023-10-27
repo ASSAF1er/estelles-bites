@@ -21,7 +21,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center md:w-[50%]">
-        <div className="bg-gradient-to-br from-[#fef08a] from-[10%] to-[#fbbf24] text-black text-2xl py-2 px-4 shadow-md rounded-md">
+        <div className="bg-[#fbbf24] text-black text-2xl py-2 px-4 shadow-md rounded-md">
           Comander maintenant
         </div>
       </div></div>
