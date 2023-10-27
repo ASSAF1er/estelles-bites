@@ -6,7 +6,7 @@ function Hero() {
       <div className="sm:ml-[3%] "><div className="flex flex-col sm:flex-row mt-[20%] sm:mt-0 px-[10px] ">
         <div className="sm:w-[60%] text-center sm:text-left  ">
           <p className="text-[#eab308] font-bold tracking-[5px] ">
-            ESTELLE'S  BITES & PASTERIES
+            ESTELLE'S <br />  BITES & PASTERIES
           </p>
           <p className=" text-4xl sm:text-[4xl] md:text-6xl text-pink-200 mt-[10px] ">
             Des petites patisseries qui procurent de grandes sensations
@@ -22,7 +22,7 @@ function Hero() {
       </div>
       <div className="flex justify-center md:w-[50%]">
         <div className="bg-gradient-to-br from-[#fef08a] from-[10%] to-[#fbbf24] text-black text-2xl py-2 px-4 shadow-md rounded-md">
-          Commander maintenant
+          Comander maintenant
         </div>
       </div></div>
     </div>
