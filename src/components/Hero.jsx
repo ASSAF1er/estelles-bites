@@ -11,7 +11,7 @@ function Hero() {
           <p className=" text-4xl sm:text-[4xl] md:text-6xl text-pink-200 mt-[10px] font-bold ">
             Des petites patisseries qui procurent de grandes sensations
           </p>
-          <div className="text-2xl my-[20px]">
+          <div className="sm:text-2xl my-[20px]">
             Pour des moments en famille, votre pause au bureau, vos céremonies,
             etc.
           </div>
