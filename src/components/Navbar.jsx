@@ -28,7 +28,7 @@ function Navbar() {
       <div className=" text-[25px] w-[200px] font-bold  pr-10 py-2 ">
         <img src={logo} alt="" />
       </div>
-      <div className=" hidden md:flex flex-row justify-between text-3xl w-screen px-5  pb-[0px] UPP">
+      <div className=" hidden md:flex flex-row justify-between text-3xl w-screen px-5  pb-[0px]  ">
         <div className={nav}>Accueil</div>
         <div className={nav}>Galerie</div>
         <div className={nav}>Contact</div>
@@ -36,7 +36,7 @@ function Navbar() {
         <div className={classNames(scroll?'bg-[#fde047] text-black rounded-md hover:bg-white hover:text-black px-5 ':'',nav) }>Commander</div>
       </div>
       <div
-        className="md:hidden  flex items-center  hover:cursor-pointer"
+        className="md:hidden  flex items-center !text-4xl hover:cursor-pointer"
         onClick={toogleNavMenu}
       >
         {!navMenu ? (
@@ -48,23 +48,23 @@ function Navbar() {
       <ul
         className={classNames(
           !navMenu ? "left-[-100%]" : "left-0",
-          "md:hidden text-black px-5 text-center fixed z-10 ease-in-out duration-500 top-0  bg-[#f8e066] w-[100%] h-screen pt-[100px] uppercase ",
+          "md:hidden text-black px-5 text-center fixed z-10 ease-in-out duration-500 top-0  bg-[#f8e066] w-[100%] h-screen pt-[100px]  ",
         )}
       >
         <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
-          accueil
+          Accueil
         </li>
         <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
-          producteurs
+          Contact
         </li>
         <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
-          projets
+          Galerie
         </li>
         <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
-          chat
+          À Propos
         </li>
-        <li className="px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]">
-          notications
+        <li className={classNames(scroll?'bg-[#fde047] text-black rounded-md hover:bg-white hover:text-black px-5 ':'',"px-5 py-3 border-b border-gray-500 hover:bg-[#fbbf24]") }>
+          Commander
         </li>
       </ul>
     </div></>
