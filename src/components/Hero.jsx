@@ -8,10 +8,10 @@ function Hero() {
           <p className="text-[#eab308] text-center sm:text-left font-bold tracking-[5px] ">
             ESTELLE'S <br />  BITES & PASTERIES
           </p>
-          <p className=" text-4xl sm:text-[4xl] md:text-6xl text-pink-200 mt-[10px] font-bold ">
+          <p className=" text-4xl sm:text-[4xl] md:text-6xl text-pink-200 mt-[10px] font-bold sm:font-[600] ">
             Des petites patisseries qui procurent de grandes sensations
           </p>
-          <div className="sm:text-2xl my-[20px]">
+          <div className=" text-xl sm:text-2xl my-[20px]">
             Pour des moments en famille, votre pause au bureau, vos céremonies,
             etc.
           </div>
