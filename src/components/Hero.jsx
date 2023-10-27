@@ -4,8 +4,8 @@ function Hero() {
   return (
     <div className="text-white h-screen w-full  sm:items-center flex ">
       <div className="sm:ml-[3%] "><div className="flex flex-col sm:flex-row mt-[20%] sm:mt-0 px-[10px] ">
-        <div className="sm:w-[60%] text-center sm:text-left  ">
-          <p className="text-[#eab308] font-bold tracking-[5px] ">
+        <div className="sm:w-[60%]   ">
+          <p className="text-[#eab308] text-center sm:text-left font-bold tracking-[5px] ">
             ESTELLE'S <br />  BITES & PASTERIES
           </p>
           <p className=" text-4xl sm:text-[4xl] md:text-6xl text-pink-200 mt-[10px] ">
