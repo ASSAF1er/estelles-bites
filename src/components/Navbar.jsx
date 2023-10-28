@@ -42,7 +42,7 @@ function Navbar() {
         {!navMenu ? (
           <span className="material-icons ">menu</span>
         ) : (
-          <span className="material-icons ">close</span>
+          <span className="material-icons text-white ">close</span>
         )}
       </div></div><div>
       <ul
