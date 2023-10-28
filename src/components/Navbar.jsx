@@ -33,7 +33,7 @@ function Navbar() {
         <div className={nav}>Galerie</div>
         <div className={nav}>Contact</div>
         <div className={nav}>À propos</div>
-        <div className={classNames(scroll?'bg-[#fde047] text-black rounded-md hover:bg-white hover:text-black px-5 ':'',nav) }>Commander</div>
+        <div className={classNames(scroll?'bg-[#fde047]  rounded-md hover:bg-white !text-black px-5 ':'',nav) }>Commander</div>
       </div>
       <div
         className="md:hidden  flex items-center !text-4xl hover:cursor-pointer"
