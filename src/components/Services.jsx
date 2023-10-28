@@ -1,9 +1,9 @@
 import { services } from "../utils/data";
 function Services() {
   return (
-    <div className="text-white h-screen">
+    <div className="flex flex-col text-white  h-screen">
       <div className="text-center text-3xl py-4 ">Nos Services</div>
-      <div className="flex sm:flex-row justify-around">{services.map((serv)=>(<Service service={serv}/> )) }</div>
+      <div className="flex   items-center sm:flex-row justify-around flex-wrap gap-y-[30px]">{services.map((serv)=>(<Service service={serv}/> )) }</div>
     </div>
   );
 }
